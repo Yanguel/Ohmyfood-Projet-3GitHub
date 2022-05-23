@@ -1,5 +1,23 @@
-#page {
+#main{
   margin: auto;
 }
 
+
+.restaurants__photo1{
+    width: 110px;
+    height: 110px;
+}
+
+.restaurants__photo2{
+  width: 110px;
+  height: 110px;
+}
+.restaurants__photo3{
+  width: 110px;
+  height: 110px;
+}
+.restaurants__photo4{
+  width: 110px;
+  height: 110px;
+}
 /*# sourceMappingURL=style.css.map */
