@@ -1,6 +1,39 @@
+@font-face {
+  font-family: 'robotoregular';
+  src: url('web-fonts/Roboto-Regular-webfont.eot');
+  src: url('web-fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('web-fonts/Roboto-Regular-webfont.woff2') format('woff2'),
+       url('web-fonts/Roboto-Regular-webfont.woff') format('woff'),
+       url('web-fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+       url('web-fontes/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'robotobold';
+  src: url('web-fonts/Roboto-Bold-webfont.eot');
+  src: url('web-fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('web-fonts/Roboto-Bold-webfont.woff2') format('woff2'),
+       url('web-fonts/Roboto-Bold-webfont.woff') format('woff'),
+       url('web-fonts/Roboto-Bold-webfont.ttf') format('truetype'),
+       url('web-fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
 #main{
   margin: auto;
 }
+h1, p, h2, ul{
+  font-family: 'robotoregular';
+}
+
+
+
+
 
 
 .restaurants__photo1{
