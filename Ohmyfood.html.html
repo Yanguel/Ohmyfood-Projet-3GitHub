@@ -43,28 +43,31 @@
       <h2 class="fonctionnement__titre">
         Fonctionnement
       </h2>
-      <p class="fonctionnement__choisir">
-        <span>1</span>
-        <a href="#">
-          <i class="fa-solid fa-mobile-screen-button"></i>
+      <div class="fonctionnement__3lignes">
+          <p class="fonctionnement__choisir">
+            <span class="chiffre1">1</span>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <a href="#" class="fonctionnement__hyperlien">
             Choisissez un restaurant
-          </a>
+            </a>
         </p>
+
       <p class="fonctionnement__composer">
-        <span>2</span>
-        <a href="#">
+        <span class="chiffre2">2</span>
           <i class="fa-solid fa-ellipsis-vertical"></i>
           <i class="fa-solid fa-bars"></i>
+          <a href="#" class="fonctionnement__hyperlien">
           Composez votre menu
         </a>
       </p>
       <p class="fonctionnement__deguster">
-        <span>3</span>
-        <a href="#">
+        <span class="chiffre3">3</span>
           <i class="fa-solid fa-store"></i>
+          <a href="#" class="fonctionnement__hyperlien">
           Dégustez au restaurant
         </a>
       </p>
+    </div>
     </section>
     
     <section class="restaurants">
@@ -72,39 +75,48 @@
         Restaurants
       </h2>
       <div class="restaurants__card1">
+        <a href="#">
         <img src="images/restaurants/card1.jpg" alt="La-Palette-du-gout,Ménilmontant" class="restaurants__photo1">
-        <h3 class="restaurants__phrasecard1">
+        <h3 class="restaurants__phrase1card1">
           La palette du goût
         </h3>
-        <p class="restaurants__phrasecard1">
+        <p class="restaurants__phrase2card1">
           Ménilmontant
         </p>
+      </a>
+      <div class="icone1">
         <i class="fa-regular fa-heart 1er-coeur"></i>
       </div>
+    </div>
 
       <div class="restaurants__card2">
+        <a href="#">
         <img src="images/restaurants/card2.jpg" alt="La-Palette-du-gout,Ménilmontant" class="restaurants__photo2">
-        <h3 class="restaurants__phrase1card1">
+        <h3 class="restaurants__phrase1card2">
           La note enchantée
         </h3>
         <p class="restaurants__phrase2card2">
           Charonne
         </p>
         <i class="fa-regular fa-heart 2eme-coeur"></i>
+        </a>
       </div>
 
       <div class="restaurants__card3">
+        <a href="#">
         <img src="images/restaurants/card3.jpg" alt="La-Palette-du-gout,Ménilmontant" class="restaurants__photo3">
-        <h3 class="restaurants__phrase2card3">
+        <h3 class="restaurants__phrase1card3">
           A la francaise
         </h3>
         <p class="restaurants__phrase2card3">
           Cité Rouge
         </p>
         <i class="fa-regular fa-heart 3eme-coeur"></i>
+      </a>
       </div>
 
       <div class="restaurants__card4">
+        <a href="#">
         <img src="images/restaurants/card4.jpg" alt="La-Palette-du-gout,Ménilmontant" class="restaurants__photo4">
         <h3 class="restaurants__phrase1card4">
           Le délice des sens
@@ -113,12 +125,15 @@
           Folie-Méricourt
         </p>
         <i class="fa-regular fa-heart 4eme-coeur"></i>
+      </a>
       </div>
     </section>
 
     <footer>
-      <img src="images/logo/ohmyfood@2x.svg" alt="Logo-ohmyfood-petit">
-      <ul>
+      <p class="footer__logo">
+        ohmyfood
+      </p>
+      <ul class="footer_ul">
         <li>
           <i class="fa-solid fa-utensils"></i>
           Proposer un restaurant
