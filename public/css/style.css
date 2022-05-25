@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'robotoregular';
+  src: url('Roboto-Regular-webfont.eot');
+  src: url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('Roboto-Regular-webfont.woff2') format('woff2'),
+       url('Roboto-Regular-webfont.woff') format('woff'),
+       url('Roboto-Regular-webfont.ttf') format('truetype'),
+       url('Roboto-Regular-webfont.svg#robotoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'robotobold';
+  src: url('Roboto-Bold-webfont.eot');
+  src: url('Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('Roboto-Bold-webfont.woff2') format('woff2'),
+       url('Roboto-Bold-webfont.woff') format('woff'),
+       url('Roboto-Bold-webfont.ttf') format('truetype'),
+       url('Roboto-Bold-webfont.svg#robotobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body{
+  width: auto;
+}
+#page{
+  margin: auto;
+}
+
+h1, p, h2, ul{
+  font-family: 'robotoregular';
+}
+
+header{
+  width: 100%;
+}
+      .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+      }
+      .logo__image{
+         width: 50%;
+         height: 50%;
+      }
+
+
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color:  #eaeaea;
+  color: #424242;
+  box-shadow: 1px -2px 1px 0px lightgrey;
+}
+        .nav__phrase{
+          font-size: 18px;
+          padding-right: 20px;
+          font-family: 'robotobold';
+          
+        }
+        .fa-location-dot{
+          padding-right: 15px;
+        }
+        
+
+
+.reservation{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f6f6f6;
+}
+          .reservation__text1{
+            font-size: 28px;
+            font-family: 'robotobold';
+            width: 70%;
+            text-align: center;
+            margin-bottom: 0px;
+          }
+          
+          .reservation__text2{
+            font-size: 20px;
+            text-align: center;
+            color: #6c6c6c;
+          }
+
+          .reservation__text3{
+            font-size: 18px;
+            color: white;
+            border: 1px solid #FF79DA;
+            background: linear-gradient(#FF79DA, #9356DC);
+            border-radius: 100px;
+            padding: 15px 25px 15px 25px;
+          }
+
+
+
+.restaurants__photo1{
+  
+  height: 110px;
+}
+
+.restaurants__photo2{
+  
+  height: 110px;
+}
+.restaurants__photo3{
+  
+  height: 110px;
+}
+.restaurants__photo4{
+  
+  height: 110px;
+}
+/*# sourceMappingURL=style.css.map */
