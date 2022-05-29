@@ -36,8 +36,8 @@ body{
   margin: auto;
 }
 a{
-  text-decoration: none;
   color: black;
+  text-decoration: none;
   font-family:'robotobold';
 }
 
@@ -129,12 +129,17 @@ nav{
             flex-direction: column;
           }
           .fonctionnement__choisir{
-            background-color: #f6f6f6;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+           background-color: #f6f6f6;
             border-radius: 100px;
-            padding: 25px 25px 25px 25px;
+            padding: 10px 18px 10px 0px;
             box-shadow: 1px 7px 20px 0px #d7d7d7;
           }
-          .chiffre1{
+          .fonctionnement__chiffre1{
+            left: 20px;
+            margin-left: -8px;
             text-align: center;
             padding: 3px 8px;
             color: white;
@@ -144,22 +149,30 @@ nav{
             border-radius: 20px;
             background-color: #9356DC;
           }
-          .fonctionnement__hyperlien{
+          .fonctionnement__hyperlien1{
+            font-family: 'robotobold';
             font-size: 20px;
           }
           .fa-mobile-screen-button{
             color: grey;
-            font-size: 24px;
+            font-size: 27px;
           }
 
+
+
           .fonctionnement__composer{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
             background-color: #f6f6f6;
             border-radius: 100px;
-            padding: 25px 25px 25px 25px;
+            padding: 10px 20px 10px 0px;
+            margin-top: 20px;
             box-shadow: 1px 7px 20px 0px #d7d7d7;
             
           }
-          .chiffre2{
+          .fonctionnement__chiffre2{
+            margin-left: -8px;
             text-align: center;
             padding: 3px 8px;
             color: white;
@@ -169,19 +182,34 @@ nav{
             border-radius: 20px;
             background-color: #9356DC;
           }
+          .fonctionnement__logobaretpoint{
+            font-size: small;
+          }
+
+        
           .fa-ellipsis-vertical, .fa-bars {
             color: grey;
             font-size: 20px;
           }
-          
+          .fonctionnement__hyperlien2{
+            font-family: 'robotobold';
+            font-size: 20px;
+          }
+
+
           .fonctionnement__deguster{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
             background-color: #f6f6f6;
             border-radius: 100px;
-            padding: 25px 25px 25px 25px;
+            padding: 25px 10px 25px 0px;
+            margin-top: 20px;
             box-shadow: 1px 7px 20px 0px #d7d7d7;
             
           }
-          .chiffre3{
+          .fonctionnement__chiffre3{
+            margin-left: -8px;
             text-align: center;
             padding: 3px 8px;
             color: white;
@@ -191,8 +219,12 @@ nav{
             border-radius: 20px;
             background-color: #9356DC;
           }
-          .fa-store{
+          .fonctionnement__logohome{
             color: grey;
+            font-size: 20px;
+          }
+          .fonctionnement__hyperlien3{
+            font-family: 'robotobold';
             font-size: 20px;
           }
 
@@ -207,7 +239,21 @@ padding-right: 20px;
             font-size: 28px;
             padding-top: 50px;
           }
-
+          .fa-heart {
+            color: #6c6c6c;
+            background-color: #fff;
+            border-radius: 50%;
+            padding:.2em;
+        }
+        .fa-heart::before {
+            content: "\f004";
+            font-weight: bold;
+            transition: color 1s ease-out;
+        }
+        .fa-heart:hover::before{
+            color: #c165db;
+            cursor: pointer;
+        }
 
           .restaurants__card1{
           background-color: white;
@@ -222,25 +268,51 @@ padding-right: 20px;
             object-fit: cover;
             height: 170px;
           }
-          .restaurants__phrase1card1{
+          .restaurants__image1{
+            position: relative;
+          }
+          .resaurant__nouveau{
+            position:absolute;
+            left: 70%;
+            top: 10%;
+            font-size: 20px;
+            padding: 5px 15px 5px 10px;
+            border-radius: 5px;
+            background-color: #99e2d0;
+            color: #269e80;
             font-family: 'robotobold';
-            font-size:  20px;
-            padding-left: 10px;
-            margin-bottom: 10px;
-          }
-          .restaurants__phrase2card1{
-            font-size: 18px;
-            padding-left: 10px;
-          }
-          .restaurants__texteticone{
             
           }
+          .restaurants__phrase1card1{
+            font-family: 'robotobold';
+            font-size:  23px;
+            padding-left: 10px;
+            margin-bottom: -10px;
+            margin-top: 12px;
+          }
+          .restaurants__phrase2card1{
+            font-size: 20px;
+            padding-left: 10px;
+          }
+          .restaurants__phrasetlogo1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .restaurants__icone1{
+            color: #424242;
+            padding-right: 27px;
+            padding-bottom: 10px;
+            font-size: 30px;
+          }
+
+
 
           .restaurants__card2{
-            background-color: white;
-            border-radius: 20px;
-            margin-bottom: 15px;
-            box-shadow: 1px 1px 10px 4px lightgrey;
+          background-color: white;
+          border-radius: 20px;
+          margin-bottom: 15px;
+          box-shadow: 1px 1px 10px 4px lightgrey;
           }
           .restaurants__photo2{
             width: 100%;
@@ -251,20 +323,47 @@ padding-right: 20px;
           }
           .restaurants__phrase1card2{
             font-family: 'robotobold';
-            font-size:  20px;
+            font-size:  23px;
             padding-left: 10px;
             margin-bottom: -10px;
           }
           .restaurants__phrase2card2{
-            font-size: 18px;
+            font-size: 20px;
             padding-left: 10px;
           }
+          .restaurants__phrasetlogo2card2{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .restaurants__icone2{
+            color: #424242;
+            padding-right: 27px;
+            padding-bottom: 10px;
+            font-size: 30px;
+          }
+          .restaurants__image2{
+            position: relative;
+          }
+          .resaurant__nouveau2{
+            position:absolute;
+            left: 70%;
+            top: 10%;
+            font-size: 20px;
+            padding: 5px 15px 5px 10px;
+            border-radius: 5px;
+            background-color: #99e2d0;
+            color: #269e80;
+            font-family: 'robotobold';
+            
+          }
+
 
           .restaurants__card3{
             background-color: white;
-            border-radius: 20px;
-            margin-bottom: 15px;
-            box-shadow: 1px 1px 10px 4px lightgrey;
+          border-radius: 20px;
+          margin-bottom: 15px;
+          box-shadow: 1px 1px 10px 4px lightgrey;
           }
           .restaurants__photo3{
             width: 100%;
@@ -275,13 +374,39 @@ padding-right: 20px;
           }
           .restaurants__phrase1card3{
             font-family: 'robotobold';
-            font-size:  20px;
+            font-size:  23px;
             padding-left: 10px;
             margin-bottom: -10px;
           }
           .restaurants__phrase2card3{
-            font-size: 18px;
+            font-size: 20px;
             padding-left: 10px;
+          }
+          .restaurants__phrasetlogo2card3{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .restaurants__icone3{
+            color: #424242;
+            padding-right: 27px;
+            padding-bottom: 10px;
+            font-size: 30px;
+          }
+          .restaurants__image3{
+            position: relative;
+          }
+          .resaurant__nouveau3{
+            position:absolute;
+            left: 70%;
+            top: 10%;
+            font-size: 20px;
+            padding: 5px 15px 5px 10px;
+            border-radius: 5px;
+            background-color: #99e2d0;
+            color: #269e80;
+            font-family: 'robotobold';
+            
           }
 
           .restaurants__card4{
@@ -299,28 +424,63 @@ padding-right: 20px;
           }
           .restaurants__phrase1card4{
             font-family: 'robotobold';
-            font-size:  20px;
+            font-size:  23px;
             padding-left: 10px;
             margin-bottom: -10px;
           }
           .restaurants__phrase2card4{
-            font-size: 18px;
+            font-size: 20px;
             padding-left: 10px;
           }
-
+          .restaurants__phrasetlogo2card4{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .restaurants__icone4{
+            color: #424242;
+            padding-right: 27px;
+            padding-bottom: 10px;
+            font-size: 30px;
+          }
+          .restaurants__image4{
+            position: relative;
+          }
+          .resaurant__nouveau4{
+            position:absolute;
+            left: 70%;
+            top: 10%;
+            font-size: 20px;
+            padding: 5px 15px 5px 10px;
+            border-radius: 5px;
+            background-color: #99e2d0;
+            color: #269e80;
+            font-family: 'robotobold';
+            
+          }
 footer{
   padding-left: 20px;
-  padding-right: 20px;
+  height: 223px;
   background-color:#353535;
-  height: 100%;
 }
-
+          .hyperlien__proposer{
+            color: #d8d8d8;
+          }
+          .hyperlien__devenir{
+            color: #d8d8d8;
+          }
+          .hyperlien__mention{
+            color: #d8d8d8;
+          }
+          .hyperlien__contact{
+            color: #d8d8d8;
+          }
           .footer__logo{
             font-family:'Shrikhand-Regular';
             color: #d5d5d5;
             padding-top: 30px;
             font-size: 25px;
-            margin-bottom: 0px;
+            margin: 0px;
           }
           .footer_ul{
             color: #d5d5d5;
