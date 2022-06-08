@@ -200,7 +200,9 @@
                     color: #f7ecfa;
                     cursor: pointer;
                 }
-  
+                .commander__phrase:hover{
+                opacity: 0.9;
+                }
   
   
   footer{

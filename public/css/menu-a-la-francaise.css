@@ -199,7 +199,9 @@ padding-bottom: 15px;
                   border-radius: 25px;
                   color: #f7ecfa;
               }
-
+              .commander__phrase:hover{
+                opacity: 0.9;
+              }
 
 
 footer{
