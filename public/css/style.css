@@ -319,6 +319,7 @@ padding-right: 20px;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             object-fit: cover;
+            object-position: 0% 60%;
             height: 170px;
           }
           .restaurants__phrase1card2{
@@ -370,6 +371,7 @@ padding-right: 20px;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             object-fit: cover;
+            object-position: 0% 90%;
             height: 170px;
           }
           .restaurants__phrase1card3{
@@ -420,6 +422,7 @@ padding-right: 20px;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             object-fit: cover;
+            object-position: 0% 80%;
             height: 170px;
           }
           .restaurants__phrase1card4{
