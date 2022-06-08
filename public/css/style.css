@@ -241,20 +241,30 @@ padding-right: 20px;
           }
           .fa-heart {
             color: #6c6c6c;
-            background-color: #fff;
+            background-color: #c165db;
+            clip-path:circle(80% at 40% 0%);
             border-radius: 50%;
-            padding:.2em;
         }
         .fa-heart::before {
             content: "\f004";
-            font-weight: bold;
             transition: color 1s ease-out;
         }
         .fa-heart:hover::before{
             color: #c165db;
             cursor: pointer;
         }
+        
+        .restaurants__coeur{
+          width: 30px;
+          height: 30px;
+          fill: red !important;
+        }
 
+        .restaurants__icone1{
+          padding-right: 27px;
+          padding-bottom: 10px;
+          font-size: 30px;
+        }
           .restaurants__card1{
           background-color: white;
           border-radius: 20px;
@@ -271,12 +281,16 @@ padding-right: 20px;
           .restaurants__image1{
             position: relative;
           }
-          .resaurant__nouveau{
+          .resaurant__nouveau, .resaurant__nouveau2, .resaurant__nouveau3, .resaurant__nouveau4{
             position:absolute;
-            left: 70%;
-            top: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 30px;
+            right: 15px;
+            top: 10px;
             font-size: 20px;
-            padding: 5px 15px 5px 10px;
             border-radius: 5px;
             background-color: #99e2d0;
             color: #269e80;
@@ -299,12 +313,7 @@ padding-right: 20px;
             justify-content: space-between;
             align-items: center;
           }
-          .restaurants__icone1{
-            color: #424242;
-            padding-right: 27px;
-            padding-bottom: 10px;
-            font-size: 30px;
-          }
+          
 
 
 
@@ -319,6 +328,7 @@ padding-right: 20px;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             object-fit: cover;
+            object-position: 40% 58%;
             height: 170px;
           }
           .restaurants__phrase1card2{
@@ -345,18 +355,7 @@ padding-right: 20px;
           .restaurants__image2{
             position: relative;
           }
-          .resaurant__nouveau2{
-            position:absolute;
-            left: 70%;
-            top: 10%;
-            font-size: 20px;
-            padding: 5px 15px 5px 10px;
-            border-radius: 5px;
-            background-color: #99e2d0;
-            color: #269e80;
-            font-family: 'robotobold';
-            
-          }
+          
 
 
           .restaurants__card3{
@@ -370,6 +369,7 @@ padding-right: 20px;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             object-fit: cover;
+            object-position: 40% 85%;
             height: 170px;
           }
           .restaurants__phrase1card3{
@@ -396,18 +396,6 @@ padding-right: 20px;
           .restaurants__image3{
             position: relative;
           }
-          .resaurant__nouveau3{
-            position:absolute;
-            left: 70%;
-            top: 10%;
-            font-size: 20px;
-            padding: 5px 15px 5px 10px;
-            border-radius: 5px;
-            background-color: #99e2d0;
-            color: #269e80;
-            font-family: 'robotobold';
-            
-          }
 
           .restaurants__card4{
             background-color: white;
@@ -420,6 +408,7 @@ padding-right: 20px;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             object-fit: cover;
+            object-position: 40% 85%;
             height: 170px;
           }
           .restaurants__phrase1card4{
@@ -446,18 +435,7 @@ padding-right: 20px;
           .restaurants__image4{
             position: relative;
           }
-          .resaurant__nouveau4{
-            position:absolute;
-            left: 70%;
-            top: 10%;
-            font-size: 20px;
-            padding: 5px 15px 5px 10px;
-            border-radius: 5px;
-            background-color: #99e2d0;
-            color: #269e80;
-            font-family: 'robotobold';
-            
-          }
+          
 footer{
   padding-left: 20px;
   height: 223px;

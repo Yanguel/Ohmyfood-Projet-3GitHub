@@ -198,7 +198,8 @@ padding-left: 15px;
                 .commander__phrase{
                     background: linear-gradient(#FF79DA, #9356DC);
                     font-family: 'robotobold';
-                    padding: 0px 60px 0px 60px;
+                    display: flex;
+                    padding: 0px 55px 0px 60px;
                     border-radius: 25px;
                     color: #f7ecfa;
                 }
