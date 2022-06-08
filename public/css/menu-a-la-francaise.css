@@ -193,7 +193,7 @@ padding-left: 15px;
 #commander{
     display: flex;
     justify-content: center;
-    padding-bottom: 80px;
+    height: 115px;
 }
                 .commander__phrase{
                     background: linear-gradient(#FF79DA, #9356DC);
