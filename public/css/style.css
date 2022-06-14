@@ -214,36 +214,38 @@ nav{
           }
           .fonctionnement__choisir{
             display: flex;
+            -webkit-box-align: center;
             align-items: center;
-            justify-content: space-around;
-           background-color: #f6f6f6;
             border-radius: 100px;
-            padding: 10px 18px 10px 0px;
+            height: auto;
+            width: auto;
+            position: relative;
             box-shadow: 1px 7px 20px 0px #d7d7d7;
+            margin-bottom: 20px;
           }
           .fonctionnement__choisir:hover{
             box-shadow: 0px 7px 20px 4px #d7d7d7;
-            background-color: #f1e6ff;
+            background-color: #f7f1ff;
           }
           .fonctionnement__chiffre1{
-            left: 20px;
-            margin-left: -8px;
-            text-align: center;
             padding: 3px 8px;
             color: white;
             font-family: 'robotoregular';
-            font-size: 15px;
-            border: 1px solid #9356DC;
             border-radius: 20px;
             background-color: #9356DC;
+            position: absolute;
+            transform: translateX(-10px);
           }
           .fonctionnement__hyperlien1{
             font-family: 'robotobold';
-            font-size: 20px;
+          }
+          .fonctionnement__logomobile{
+            color: #7e7e7e;
+            margin: 0 20px;
           }
           .fa-mobile-screen-button{
             color: grey;
-            font-size: 27px;
+            font-size: 20px;
           }
           
 
@@ -251,78 +253,73 @@ nav{
 
           .fonctionnement__composer{
             display: flex;
+            -webkit-box-align: center;
             align-items: center;
-            justify-content: space-around;
-            background-color: #f6f6f6;
             border-radius: 100px;
-            padding: 10px 20px 10px 0px;
-            margin-top: 20px;
+            height: auto;
+            width: auto;
+            position: relative;
             box-shadow: 1px 7px 20px 0px #d7d7d7;
+            margin-bottom: 20px;
           }
           .fonctionnement__composer:hover{
             box-shadow: 0px 7px 20px 4px #d7d7d7;
-            background-color: #f1e6ff;
+            background-color: #f7f1ff;
           }
 
           .fonctionnement__chiffre2{
-            margin-left: -8px;
-            text-align: center;
             padding: 3px 8px;
             color: white;
             font-family: 'robotoregular';
-            font-size: 15px;
-            border: 1px solid #9356DC;
             border-radius: 20px;
             background-color: #9356DC;
+            position: absolute;
+            transform: translateX(-10px);
           }
           .fonctionnement__logobaretpoint{
-            font-size: small;
+            color: #7e7e7e;
+            margin: 0 20px;
           }
 
         
           .fa-ellipsis-vertical, .fa-bars {
             color: grey;
-            font-size: 20px;
           }
           .fonctionnement__hyperlien2{
             font-family: 'robotobold';
-            font-size: 20px;
           }
 
 
           .fonctionnement__deguster{
             display: flex;
+            -webkit-box-align: center;
             align-items: center;
-            justify-content: space-around;
-            background-color: #f6f6f6;
             border-radius: 100px;
-            padding: 25px 10px 25px 0px;
-            margin-top: 20px;
+            height: auto;
+            width: auto;
+            position: relative;
             box-shadow: 1px 7px 20px 0px #d7d7d7;
           }
           .fonctionnement__deguster:hover{
             box-shadow: 0px 7px 20px 4px #d7d7d7;
-            background-color: #f1e6ff;
+            background-color: #f7f1ff;
           }
 
           .fonctionnement__chiffre3{
-            margin-left: -8px;
-            text-align: center;
             padding: 3px 8px;
             color: white;
             font-family: 'robotoregular';
-            font-size: 15px;
-            border: 1px solid #9356DC;
             border-radius: 20px;
             background-color: #9356DC;
+            position: absolute;
+            transform: translateX(-10px);
           }
           .fonctionnement__logohome{
-            color: grey;
-            font-size: 20px;
+            color: #7e7e7e;
+            margin: 0 20px;
           }
           .fonctionnement__hyperlien3{
             font-family: 'robotobold';
-            font-size: 20px;
           }
 
 #restaurants{
