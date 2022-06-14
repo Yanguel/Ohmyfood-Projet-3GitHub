@@ -35,99 +35,13 @@
   #page{ 
     margin: auto;
   }
-  .loader{
-    height: 100%;
-    background-color: white;
-    margin:auto;
-    position:fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 20;
-    visibility: hidden;
-    cursor: wait;
-    animation: spinner 2s linear;
-    }
-    @keyframes spinner {
-      0% {
-        opacity: 0.9;
-                visibility: visible;
-      }
-      70%{
-        opacity: 0.9;
-      }
-      100% {
-        opacity: 0;
-                visibility: hidden;
-      }
-    }
-    
-    .loader__border{
-      display: flex;
-      -webkit-box-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      align-items: center;
-      border: 10px solid transparent;
-      border-bottom: 10px solid #9356DC;
-      border-left: 10px solid #FF79DA;
-      border-right: 10px solid #FF79DA;
-      border-top: 10px solid #99e2d0;
-      border-radius: 50%;
-      width: 100px;
-      height: 100px;
-      margin: auto;
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      -webkit-animation: rotate-center 1s ease-in-out 2 ;
-    animation: rotate-center 1s ease-in-out 2  ;
-    z-index: 10;
-    visibility: hidden;
-    }
-    .loader__center{
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
-      background-color: #99e2d0;
-    }
-    
-    @-webkit-keyframes rotate-center {
-      0% {
-        -webkit-transform: rotate(0);
-                transform: rotate(0);
-                visibility: visible;
-      }
-      100% {
-        -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
-                visibility: hidden;
-      }
-    }
-    @keyframes rotate-center {
-      0% {
-        -webkit-transform: rotate(0);
-                transform: rotate(0);
-                visibility: visible;
-      }
-      100% {
-        -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
-                visibility: hidden;
-      }
-    }
+  
   a{
     color: black;
     text-decoration: none;
     font-family:'robotobold';
   }
   
-  
-  .fa-heart{
-      padding-right: 30px;
-        font-size: 30px;
-        color: #535353;
-    }
   
   header{
     width: 100%;
@@ -158,17 +72,64 @@
                      }
   
   
-                
+                     .section__imagedefond{
+                      width: 100%;
+                      height: 250px;
+                    }
                 .image__la-note-enchantée{
-                    width: 100%;
-                    object-fit: cover; 
-                    height: 294px;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
                 }
-  
+                .coeurrempli{
+                  position: absolute;
+                  fill: url(#text-fill);
+                  stroke:none;
+                }
+                
+                .coeur{
+                  width: 30px;
+                  stroke-width: 30;
+                  cursor: pointer;
+                  fill: white;
+                  stroke: black;
+                }
+                .coeurvide{
+                  width: 50px;
+                  position: relative;
+                  opacity: 0;
+                  
+                }
+                .coeurvide:hover{
+                  opacity: 1;
+                  transition: 1s;
+                  fill: url(#text-fill);
+                  stroke: none;
+                  stroke: url(#text-fill);
+                }
+                .coeurvide:active{
+                  opacity: 1;
+                  transition: 1s;
+                  fill: url(#text-fill);
+                  stroke: none;
+                  stroke: url(#text-fill);
+                }
+                .restaurants__icone1{
+                  display: flex;
+                  -webkit-box-pack: center;
+                  justify-content: center;
+                  -webkit-box-align: center;
+                  align-items: center;
+                  margin-right: 20px;
+                  width: 30px;
+                }
   #menu{
     background-color: #f6f6f6;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
+    margin-top: -36px;
+  width: 100%;
+  position: relative;
   }
                 .menu__titre{
                     display: flex;
