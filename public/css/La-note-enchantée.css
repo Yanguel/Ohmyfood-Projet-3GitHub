@@ -159,7 +159,7 @@
               
               .prixmenu{
                 padding-right: 20px;
-                padding-left: 7px;
+                padding-top: 30px;
 
               }
                 .textetprix{
@@ -173,7 +173,7 @@
                     
               }
               .textedumenu{
-                margin-left: 20px;
+                margin-left: 11px;
                 white-space: nowrap;
                 overflow: hidden;
               }
@@ -284,10 +284,6 @@
                     align-items: center;
                     justify-content: space-between;
                 }
-                .prix{
-                    padding-right: 25px;
-                    font-family: 'robotobold';
-                }
                 .entrees__texttartare, .entree__textvelouté, .entree__textsoupe, .entree__textcanard  {
                     background-color: #ffffff;
                     box-shadow: 1px 1px 10px 4px lightgrey;
@@ -304,16 +300,14 @@
                 }
                 h4{
                     font-family: 'robotobold';
-                    font-size: 18px;
+                    font-size: 16px;
                     margin: 0;
                     padding-top: 10px;
-                    padding-left: 10px;
                 }
                 .description{
                     margin:0px;
-                    padding-left: 10px;
                     font-family: 'robotoregular';
-                    font-size: 16px;
+                    font-size: 13px;
                 }
   .plats{
   border-radius: 25px;
