@@ -111,14 +111,14 @@
                 }
                 .coeurvide:hover{
                   opacity: 1;
-                  transition: 1s;
+                  transition: 0.7s;
                   fill: url(#text-fill);
                   stroke: none;
                   stroke: url(#text-fill);
                 }
                 .coeurvide:active{
                   opacity: 1;
-                  transition: 1s;
+                  transition: 0.7s;
                   fill: url(#text-fill);
                   stroke: none;
                   stroke: url(#text-fill);
@@ -181,27 +181,129 @@
                 .border1{
                     border-bottom: 4px solid #99e2d0;
                 }
-                .textetprix{
-                    margin-top: -10px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                }
-                .prix{
-                    padding-right: 25px;
-                    font-family: 'robotobold';
-                }
+
+                
+/* MODIFICATION POUR LA VALIDATION */   
                 .entrees__texttartare, .entree__textvelouté, .entree__textsoupe  {
                     background-color: #ffffff;
                     box-shadow: 1px 1px 10px 4px lightgrey;
                     border-radius: 20px;
                     margin-bottom: 15px;
+                    height: 70px;               
+                    position: relative;
+                    cursor: pointer;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+
                 }
+                .prix{
+                  font-family: 'robotobold';
+              }
+              .prixmenu{
+                padding-right: 20px;
+                padding-left: 7px;
+
+              }
+                .textetprix{
+                  
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  width: 100%;
+                  -webkit-box-pack: justify;
+                  -webkit-box-align: center;
+                    
+              }
+              .textedumenu{
+                margin-left: 20px;
+                white-space: nowrap;
+                overflow: hidden;
+              }
+
+
+
+
+              .validation:hover .prixmenu{
+                padding-right: 70px;
+                -webkit-transition: 0.5s ease;
+                transition: 0.5s ease;
+              }
+              
+              .validation .validation__box{
+                display: none;
+                position: absolute;
+                background: #99E2D0;
+                border-radius: 0 15px 15px 0;
+                right: 0px;
+                padding: 0 13px;
+                height: 100%;
+              }
+              
+              .validation:hover .validation__box{
+                display: flex;
+                -webkit-box-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                align-items: center;
+                animation: slide-left 0.5s ease;
+                transform-origin: right;
+              }
+              
+              .validation .validation__box .fa-circle-check{
+                font-size: 30px;
+                color: white;
+                transform: rotate(180deg);
+                animation: rotate 0.5s both;
+              }
+              
+              .hiddencard .denomination {
+                margin: 0;
+                text-overflow: ellipsis;
+                overflow: hidden;
+              }
+              
+              .fa-circle-check{
+                font-weight: 900;
+                -webkit-font-smoothing:antialiased;
+                display: inline-block;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                line-height: 1;
+              }
+
+              .fa-circle-check::before{
+                content: "\f058";
+              }
+
+              @keyframes slide-left {
+                0%{
+                  transform: scaleX(0);
+                  }
+                  100%{
+                    transform: scaleX(50px);
+                  }
+              }
+              @keyframes rotate {
+                0%{
+                  transform: rotate(0);
+                }
+                100%{
+                  transform: rotate(360deg);
+                }
+              }
+                
+              /* MODIFICATION POUR LA VALIDATION */   
+
+
+
                 h4{
                     font-family: 'robotobold';
                     font-size: 18px;
                     margin: 0;
-                    padding-top: 10px;
                     padding-left: 10px;
                 }
                 .description{
@@ -233,13 +335,25 @@
                     font-family: 'robotoregular';
                     font-size: 20px;
                 }
+
+ /* Création de la boite de validation */               
                 .plats__textcoquille, .plats__textmagret, .plats__textpigeonneau{
-                    border-radius: 20px;
-                    margin-bottom: 15px;
-                    background-color: #ffffff;
-                    box-shadow: 1px 1px 10px 4px lightgrey;
+                  background-color: #ffffff;
+                  box-shadow: 1px 1px 10px 4px lightgrey;
+                  border-radius: 20px;
+                  margin-bottom: 15px;
+                  height: 70px;               
+                  position: relative;
+                  cursor: pointer;
+                  overflow: hidden;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  width: 100%;
                 }
-  
+                
+                
+  /* Création de la boite de validation */
   .desserts{
     border-radius: 25px;
     padding-left: 15px;
@@ -263,14 +377,24 @@
                 font-family: 'robotoregular';
                 font-size: 20px;
                } 
+
                .desserts__textpetales, .desserts__textfondant, .desserts__textmillefeuille{
                 background-color: #ffffff;
-                box-shadow: 1px 1px 10px 4px lightgrey;
-                border-radius: 20px;
-                margin-bottom: 15px;
+                    box-shadow: 1px 1px 10px 4px lightgrey;
+                    border-radius: 20px;
+                    margin-bottom: 15px;
+                    height: 70px;               
+                    position: relative;
+                    cursor: pointer;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
                }
   
-  
+               
+
   #commander{
     display: flex;
     justify-content: center;

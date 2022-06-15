@@ -28,7 +28,19 @@
   font-weight: normal;
   font-style: normal;
   }
-
+  @keyframes spinner {
+    0% {
+      opacity: 0.9;
+              visibility: visible;
+    }
+    70%{
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0;
+              visibility: hidden;
+    }
+  }
 body{
   width: auto;
 }
@@ -49,19 +61,7 @@ body{
   cursor: wait;
   animation: spinner 2s linear;
   }
-  @keyframes spinner {
-    0% {
-      opacity: 0.9;
-              visibility: visible;
-    }
-    70%{
-      opacity: 0.9;
-    }
-    100% {
-      opacity: 0;
-              visibility: hidden;
-    }
-  }
+
   
   .loader__border{
     display: flex;
@@ -355,14 +355,14 @@ padding-right: 20px;
         }
         .coeurvide:hover{
           opacity: 1;
-          transition: 1s;
+          transition: 0.7s;
           fill: url(#text-fill);
           stroke: none;
           stroke: url(#text-fill);
         }
         .coeurvide:active{
           opacity: 1;
-          transition: 1s;
+          transition: 0.7s;
           fill: url(#text-fill);
           stroke: none;
           stroke: url(#text-fill);
@@ -376,6 +376,9 @@ padding-right: 20px;
           border-radius: 20px;
           margin-bottom: 15px;
            box-shadow: 1px 1px 10px 4px lightgrey;
+          }
+          .restaurants__card1:hover{
+            box-shadow: 1px 1px 10px 8px lightgrey;
           }
           .restaurants__icone1{
             display: flex;
@@ -440,6 +443,9 @@ padding-right: 20px;
           margin-bottom: 15px;
           box-shadow: 1px 1px 10px 4px lightgrey;
           }
+          .restaurants__card2:hover{
+            box-shadow: 1px 1px 10px 8px lightgrey;
+          }
           .restaurants__photo2{
             width: 100%;
             border-top-left-radius: 20px;
@@ -499,6 +505,9 @@ padding-right: 20px;
           margin-bottom: 15px;
           box-shadow: 1px 1px 10px 4px lightgrey;
           }
+          .restaurants__card3:hover{
+            box-shadow: 1px 1px 10px 8px lightgrey;
+          }
           .restaurants__photo3{
             width: 100%;
             border-top-left-radius: 20px;
@@ -556,6 +565,9 @@ padding-right: 20px;
             border-radius: 20px;
             margin-bottom: 15px;
             box-shadow: 1px 1px 10px 4px lightgrey;
+          }
+          .restaurants__card4:hover{
+            box-shadow: 1px 1px 10px 8px lightgrey;
           }
           .restaurants__photo4{
             width: 100%;
