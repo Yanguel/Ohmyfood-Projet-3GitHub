@@ -28,7 +28,14 @@
     font-weight: normal;
     font-style: normal;
     }
-  
+    @keyframes opacity{
+      0%{
+        opacity: 0;
+      }
+      100%{
+        opacity: 1;
+      }
+    }
   body{
     width: auto;
   }
@@ -138,12 +145,14 @@
                     align-items: baseline;
                     justify-content: space-between;
                 }
-                h1{
-                    padding-top: 25px;
-                    padding-left: 15px;
-                    font-family: 'Shrikhand-Regular';  
-                }
-                
+                h2{
+                  padding-top: 25px;
+                  padding-left: 15px;
+                  font-family: 'Shrikhand-Regular';  
+              }
+              h3{
+                  font-family: 'Shrikhand-Regular';  
+              }
                 
                 
   .entrees{
@@ -156,6 +165,18 @@
                 color: #535353;
                 font-family: 'robotoregular';
                 font-size: 20px;
+                }
+                #case-1{
+                  animation-delay: 0.1s;
+                }
+                #case-2{
+                  animation-delay: 0.2s;
+                }
+                #case-3{
+                  animation-delay: 0.3s;
+                }
+                .controlopacity{
+                  animation: opacity 1s both;
                 }
                 .border1{
                     border-bottom: 4px solid #99e2d0;
@@ -198,6 +219,15 @@
                 .border2{
                 border-bottom: 4px solid #99e2d0;
                 }
+                #case-4{
+                  animation-delay: 0.4s;
+                }
+                #case-5{
+                  animation-delay: 0.5s;
+                }
+                #case-6{
+                  animation-delay: 0.6s;
+                }
                 .plats__titre2{
                     color: #535353;
                     font-family: 'robotoregular';
@@ -218,6 +248,15 @@
   }
                 .border3{
                     border-bottom: 4px solid #99e2d0;
+                }
+                #case-7{
+                  animation-delay: 0.7s;
+                }
+                #case-8{
+                  animation-delay: 0.8s;
+                }
+                #case-9{
+                  animation-delay: 0.9s;
                 }
                .desserts__titre3{
                 color: #535353;

@@ -28,7 +28,14 @@
   font-weight: normal;
   font-style: normal;
   }
-
+  @keyframes opacity{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
 body{
   width: auto;
 }
@@ -147,11 +154,14 @@ header{
                   align-items: baseline;
                   justify-content: space-between;
               }
-              h1{
-                  padding-top: 25px;
-                  padding-left: 15px;
-                  font-family: 'Shrikhand-Regular';  
-              }
+              h2{
+                padding-top: 25px;
+                padding-left: 15px;
+                font-family: 'Shrikhand-Regular';  
+            }
+            h3{
+                font-family: 'Shrikhand-Regular';  
+            }
               
               
               
@@ -162,6 +172,19 @@ padding-right: 15px;
 padding-bottom: 15px;
 overflow: hidden;
 }
+#case-1{
+  animation-delay: 0.1s;
+}
+#case-2{
+  animation-delay: 0.2s;
+}
+#case-3{
+  animation-delay: 0.3s;
+}
+.controlopacity{
+  animation: opacity 1s both;
+}
+
 .validation__box{
   opacity: 0;
   position: absolute;
@@ -200,16 +223,7 @@ overflow: hidden;
   align-items: center;
   height: 69px;
 }
-.delay-1{
-  animation-delay: 0.1s
-  
-}
-.delay-2{
-  animation-delay: 0.2s
-}
-.delay-3{
-  animation-delay: 0.3s
-}
+
 
 .entrees__texttartare{
 white-space: nowrap;
@@ -264,6 +278,19 @@ padding-bottom: 15px;
 animation-delay: .1s;
 overflow: hidden;
 }   
+
+#case-4{
+  animation-delay: 0.4s;
+}
+
+#case-5{
+  animation-delay: 0.5s;
+}
+
+#case-6{
+  animation-delay: 0.6s;
+}
+
 .plats__textparagrapheetprix {
   position: relative;
   background-color: #ffffff;
@@ -275,20 +302,9 @@ overflow: hidden;
   align-content: center;
   align-items: center;
   height: 69px;
-  animation: itemAppear .6s;
   animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
   animation-fill-mode: both;
   
-}
-.delay-4{
-  animation-delay: 0.4s;
-
-}
-.delay-5{
-  animation-delay: 0.5s;
-}
-.delay-6{
-  animation-delay: 0.6s;
 }
               .plats__prix:hover {
               -webkit-animation: slide-left 0.6s ease-in-out both;
@@ -309,6 +325,15 @@ overflow: hidden;
   padding-bottom: 35px;
   animation-delay: .2s;
   overflow: hidden;
+}
+#case-7{
+  animation-delay: 0.7s;
+}
+#case-8{
+  animation-delay: 0.8s;
+}
+#case-9{
+  animation-delay: 0.9s;
 }
 .desserts__textparagrapheetprix{
   position: relative;
