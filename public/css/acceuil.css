@@ -1,0 +1,930 @@
+body {
+  width: 100%;
+}
+body main {
+  margin: auto;
+}
+body .loader {
+  height: 100%;
+  background-color: white;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  visibility: hidden;
+  cursor: wait;
+  -webkit-animation: spinner 2s linear;
+          animation: spinner 2s linear;
+}
+body .loader .loader__border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #9356DC;
+  border-left: 10px solid #FF79DA;
+  border-right: 10px solid #FF79DA;
+  border-top: 10px solid #99e2d0;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-animation: rotate-center 1s ease-in-out 2;
+  animation: rotate-center 1s ease-in-out 2;
+  z-index: 10;
+  visibility: hidden;
+}
+body .loader .loader__center {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #99e2d0;
+}
+body a {
+  color: black;
+  text-decoration: none;
+  font-family: "robotobold";
+}
+body h1, body p, body h2, body ul {
+  font-family: "robotoregular";
+}
+body header {
+  width: 100%;
+}
+body header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+body header .logo__image {
+  width: 50%;
+  height: 50%;
+}
+body header .nav__phrase {
+  font-size: 18px;
+  font-family: "robotobold";
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+  color: #424242;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+body header .fa-location-dot {
+  padding-right: 15px;
+  font-size: 20px;
+}
+body .reservation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+  padding-bottom: 40px;
+}
+body .reservation .reservation__text1 {
+  font-size: 28px;
+  font-family: "robotobold";
+  width: 70%;
+  text-align: center;
+  margin-bottom: 0px;
+}
+body .reservation .reservation__text2 {
+  font-size: 20px;
+  text-align: center;
+  color: #6c6c6c;
+}
+body .reservation .reservation__text3 {
+  font-size: 18px;
+  color: white;
+  border: 1px solid #FF79DA;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 100px;
+  padding: 15px 25px 15px 25px;
+}
+body .reservation .reservation__text3:hover {
+  opacity: 0.9;
+}
+body .fonctionnement {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+}
+body .fonctionnement__titre {
+  font-family: "robotobold";
+  font-size: 28px;
+}
+body .fonctionnement__3lignes {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+body .fonctionnement .fonctionnement__choisir {
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  height: auto;
+  width: auto;
+  position: relative;
+  box-shadow: 1px 7px 20px 0px #d7d7d7;
+  margin-bottom: 20px;
+}
+body .fonctionnement .fonctionnement__choisir:hover {
+  box-shadow: 0px 7px 20px 4px #d7d7d7;
+  background-color: #f7f1ff;
+}
+body .fonctionnement .fonctionnement__chiffre1 {
+  padding: 3px 8px;
+  color: white;
+  font-family: "robotoregular";
+  border-radius: 20px;
+  background-color: #9356DC;
+  position: absolute;
+  transform: translateX(-10px);
+}
+body .fonctionnement .fonctionnement__hyperlien1 {
+  font-family: "robotobold";
+}
+body .fonctionnement .fonctionnement__logomobile {
+  color: #7e7e7e;
+  margin: 0 20px;
+}
+body .fonctionnement .fa-mobile-screen-button {
+  color: grey;
+  font-size: 20px;
+}
+body .fonctionnement .fonctionnement__composer {
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  height: auto;
+  width: auto;
+  position: relative;
+  box-shadow: 1px 7px 20px 0px #d7d7d7;
+  margin-bottom: 20px;
+}
+body .fonctionnement .fonctionnement__composer:hover {
+  box-shadow: 0px 7px 20px 4px #d7d7d7;
+  background-color: #f7f1ff;
+}
+body .fonctionnement .fonctionnement__chiffre2 {
+  padding: 3px 8px;
+  color: white;
+  font-family: "robotoregular";
+  border-radius: 20px;
+  background-color: #9356DC;
+  position: absolute;
+  transform: translateX(-10px);
+}
+body .fonctionnement .fonctionnement__logobaretpoint {
+  color: #7e7e7e;
+  margin: 0 20px;
+}
+body .fonctionnement .fa-ellipsis-vertical, body .fonctionnement .fa-bars {
+  color: grey;
+}
+body .fonctionnement .fonctionnement__hyperlien2 {
+  font-family: "robotobold";
+}
+body .fonctionnement .fonctionnement__deguster {
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  height: auto;
+  width: auto;
+  position: relative;
+  box-shadow: 1px 7px 20px 0px #d7d7d7;
+}
+body .fonctionnement__deguster:hover {
+  box-shadow: 0px 7px 20px 4px #d7d7d7;
+  background-color: #f7f1ff;
+}
+body .fonctionnement .fonctionnement__chiffre3 {
+  padding: 3px 8px;
+  color: white;
+  font-family: "robotoregular";
+  border-radius: 20px;
+  background-color: #9356DC;
+  position: absolute;
+  transform: translateX(-10px);
+}
+body .fonctionnement .fonctionnement__logohome {
+  color: #7e7e7e;
+  margin: 0 20px;
+}
+body .fonctionnement .fonctionnement__hyperlien3 {
+  font-family: "robotobold";
+}
+body #restaurants {
+  background-color: #f6f6f6;
+  padding-left: 20px;
+  padding-bottom: 40px;
+  padding-right: 20px;
+}
+body #restaurants .restaurants__titre {
+  font-family: "robotobold";
+  font-size: 28px;
+  padding-top: 50px;
+}
+body #restaurants .restaurants__card1 {
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  box-shadow: 1px 1px 10px 4px lightgrey;
+}
+body #restaurants .restaurants__card1:hover {
+  box-shadow: 1px 1px 10px 8px lightgrey;
+}
+body #restaurants .restaurants__image1 {
+  position: relative;
+}
+body #restaurants .restaurants__photo1 {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 170px;
+}
+body #restaurants .resaurant__nouveau {
+  position: absolute;
+  width: 108px;
+  height: 35px;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #99e2d0;
+  color: #269e80;
+  font-family: "robotobold";
+}
+body #restaurants .restaurants__phrasetlogo1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body #restaurants .restaurants__phrase1et2 {
+  width: 230px;
+}
+body #restaurants .restaurants__phrase1card1 {
+  font-family: "robotobold";
+  font-size: 23px;
+  padding-left: 10px;
+  margin-bottom: -10px;
+  margin-top: 12px;
+}
+body #restaurants .restaurants__phrase2card1 {
+  font-size: 20px;
+  padding-left: 10px;
+}
+body #restaurants .restaurants__icone1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  width: 30px;
+}
+body #restaurants .coeurrempli {
+  position: absolute;
+  fill: url(#text-fill);
+  stroke: none;
+}
+body #restaurants .coeur {
+  width: 30px;
+  stroke-width: 30;
+  cursor: pointer;
+  fill: white;
+  stroke: black;
+}
+body #restaurants .coeurvide {
+  width: 50px;
+  position: relative;
+  opacity: 0;
+}
+body #restaurants .coeurvide:hover {
+  opacity: 1;
+  transition: 0.7s;
+  fill: url(#text-fill);
+  stroke: none;
+  stroke: url(#text-fill);
+}
+body #restaurants .coeurvide:active {
+  opacity: 1;
+  transition: 0.7s;
+  fill: url(#text-fill);
+  stroke: none;
+  stroke: url(#text-fill);
+}
+body .restaurants__card2 {
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  box-shadow: 1px 1px 10px 4px lightgrey;
+}
+body .restaurants__card2 .restaurants__card2:hover {
+  box-shadow: 1px 1px 10px 8px lightgrey;
+}
+body .restaurants__card2 .restaurants__image2 {
+  position: relative;
+}
+body .restaurants__card2 .restaurants__photo2 {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 60%;
+     object-position: 0% 60%;
+  height: 170px;
+}
+body .restaurants__card2 .resaurant__nouveau2 {
+  position: absolute;
+  width: 108px;
+  height: 35px;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #99e2d0;
+  color: #269e80;
+  font-family: "robotobold";
+}
+body .restaurants__card2 .restaurants__phrasetlogo2card2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .restaurants__card2 .restaurants__phrase1card2 {
+  font-family: "robotobold";
+  font-size: 23px;
+  padding-left: 10px;
+  margin-bottom: -10px;
+}
+body .restaurants__card2 .restaurants__phrase2card2 {
+  font-size: 20px;
+  padding-left: 10px;
+}
+body .restaurants__card2 .restaurants__icone2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  width: 30px;
+}
+body .restaurants__card3 {
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  box-shadow: 1px 1px 10px 4px lightgrey;
+}
+body .restaurants__card3 .restaurants__card3:hover {
+  box-shadow: 1px 1px 10px 8px lightgrey;
+}
+body .restaurants__card3 .restaurants__image3 {
+  position: relative;
+}
+body .restaurants__card3 .restaurants__photo3 {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 90%;
+     object-position: 0% 90%;
+  height: 170px;
+}
+body .restaurants__card3 .resaurant__nouveau3 {
+  position: absolute;
+  width: 108px;
+  height: 35px;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #99e2d0;
+  color: #269e80;
+  font-family: "robotobold";
+}
+body .restaurants__card3 .restaurants__phrasetlogo2card3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .restaurants__card3 .restaurants__phrase1card3 {
+  font-family: "robotobold";
+  font-size: 23px;
+  padding-left: 10px;
+  margin-bottom: -10px;
+}
+body .restaurants__card3 .restaurants__phrase2card3 {
+  font-size: 20px;
+  padding-left: 10px;
+}
+body .restaurants__card3 .restaurants__icone3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  width: 30px;
+}
+body .restaurants__card4 {
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  box-shadow: 1px 1px 10px 4px lightgrey;
+}
+body .restaurants__card4 .restaurants__card4:hover {
+  box-shadow: 1px 1px 10px 8px lightgrey;
+}
+body .restaurants__card4 .restaurants__image4 {
+  position: relative;
+}
+body .restaurants__card4 .restaurants__photo4 {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 80%;
+     object-position: 0% 80%;
+  height: 170px;
+}
+body .restaurants__card4 .resaurant__nouveau4 {
+  position: absolute;
+  width: 108px;
+  height: 35px;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #99e2d0;
+  color: #269e80;
+  font-family: "robotobold";
+}
+body .restaurants__card4 .restaurants__phrasetlogo2card4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .restaurants__card4 .restaurants__phrase1card4 {
+  font-family: "robotobold";
+  font-size: 23px;
+  padding-left: 10px;
+  margin-bottom: -10px;
+}
+body .restaurants__card4 .restaurants__phrase2card4 {
+  font-size: 20px;
+  padding-left: 10px;
+}
+body .restaurants__card4 .restaurants__icone4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  width: 30px;
+}
+body footer {
+  padding-left: 20px;
+  height: 223px;
+  background-color: #353535;
+}
+body footer .hyperlien__proposer {
+  color: #d8d8d8;
+}
+body footer .hyperlien__devenir {
+  color: #d8d8d8;
+}
+body footer .hyperlien__mention {
+  color: #d8d8d8;
+}
+body footer .hyperlien__contact {
+  color: #d8d8d8;
+}
+body footer .footer__logo {
+  font-family: "Shrikhand-Regular";
+  color: #d5d5d5;
+  padding-top: 30px;
+  font-size: 25px;
+  margin: 0px;
+}
+body footer .footer_ul {
+  color: #d5d5d5;
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+  padding-left: 0px;
+}
+body footer .fa-utensils {
+  font-size: 16px;
+  padding-right: 9px;
+}
+body footer .fa-handshake-angle {
+  padding-right: 4px;
+  font-size: 16px;
+}
+body footer li {
+  padding-bottom: 7px;
+}
+@-webkit-keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+    visibility: visible;
+  }
+  100% {
+    transform: rotate(360deg);
+    visibility: hidden;
+  }
+}
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+    visibility: visible;
+  }
+  100% {
+    transform: rotate(360deg);
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes spinner {
+  0% {
+    opacity: 0.9;
+    visibility: visible;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes spinner {
+  0% {
+    opacity: 0.9;
+    visibility: visible;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=acceuil.css.map */
