@@ -583,8 +583,8 @@ body{
                       padding-bottom: 7px;
                     }
                   }
-
-  @media only screen and (min-width: 426px){
+                
+  @media only all and (min-width: 426px){
 
   .fonctionnement{
     display: flex;
@@ -599,30 +599,83 @@ body{
         margin-bottom: 0px;
         width: 300px;
       }
-    }           
-  }
+    }   
+    footer{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+              .footer__logo{
+                padding-top: 0px;
+                display: flex;
+                align-items: center;
+              }
+              .footer_ul{
+                display: flex;
+                flex-direction: column; 
+                justify-content: center;
+              }
+          }         
+  } 
 
-  @media only all and (min-width: 769px) and (max-width: 2560px) {
+  @media only screen and (min-width: 769px) {
 
    .Restaurantphotos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    .restaurants__card1, .restaurants__card2, .restaurants__card3, .restaurants__card4{
-      width: 367px;
+        .restaurants__card1, .restaurants__card2, .restaurants__card3, .restaurants__card4{
+          width: 367px;
+        }
+            .restaurants__phrase1card2{
+              margin-top: 12px;
+            }
+  }
+        .restaurants__titre{
+          display: flex;
+          justify-content: center;
+        }
+ 
+  }
+  
+  @media only all and (min-width: 1138px) and (max-width: 2560px){
+
+    .Restaurantphotos{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+      .restaurants__card1, .restaurants__card2, .restaurants__card3, .restaurants__card4{
+        width: 1000px;
+        height: 500px;
+      }
+      
+      
     }
-    .restaurants__phrase1card2{
-      margin-top: 12px;
+    #restaurants{
+      .restaurants__photo1{
+        height: 411px;
+      }
+    .restaurants__photo2{
+      height: 411px;
+    }
+    .restaurants__photo3{
+      height: 411px;
+    }
+    .restaurants__photo4{
+      height: 411px;
+    }
+    .restaurants__phrasetlogo2card4, .restaurants__phrasetlogo1, .restaurants__phrasetlogo2card2, .restaurants__phrasetlogo2card3 {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
     }
   }
-   .restaurants__titre{
-    display: flex;
-    justify-content: center;
+  .restaurants__phrase1card3, .restaurants__phrase1card4{
+    margin-top: 12px;
   }
-
-    
-    }
-
+  
+}
 
 
       @-webkit-keyframes rotate-center {
@@ -663,7 +716,7 @@ body{
         }
       }
     }
-
+    
 
 
     html {
@@ -1004,5 +1057,4 @@ body{
     
     [hidden] {
       display: none;
-    }  
-/*# sourceMappingURL=style.css.map */
+    }

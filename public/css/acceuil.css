@@ -567,7 +567,7 @@ body footer .fa-handshake-angle {
 body footer li {
   padding-bottom: 7px;
 }
-@media only screen and (min-width: 426px) {
+@media only all and (min-width: 426px) {
   body .fonctionnement {
     display: flex;
     flex-direction: column;
@@ -582,8 +582,23 @@ body footer li {
     margin-bottom: 0px;
     width: 300px;
   }
+  body footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  body footer .footer__logo {
+    padding-top: 0px;
+    display: flex;
+    align-items: center;
+  }
+  body footer .footer_ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
-@media only all and (min-width: 769px) and (max-width: 2560px) {
+@media only screen and (min-width: 769px) {
   body .Restaurantphotos {
     display: flex;
     flex-wrap: wrap;
@@ -598,6 +613,39 @@ body footer li {
   body .restaurants__titre {
     display: flex;
     justify-content: center;
+  }
+}
+@media only all and (min-width: 1138px) and (max-width: 2560px) {
+  body .Restaurantphotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .Restaurantphotos .restaurants__card1, body .Restaurantphotos .restaurants__card2, body .Restaurantphotos .restaurants__card3, body .Restaurantphotos .restaurants__card4 {
+    width: 1000px;
+    height: 500px;
+  }
+  body #restaurants .restaurants__photo1 {
+    height: 411px;
+  }
+  body #restaurants .restaurants__photo2 {
+    height: 411px;
+  }
+  body #restaurants .restaurants__photo3 {
+    height: 411px;
+  }
+  body #restaurants .restaurants__photo4 {
+    height: 411px;
+  }
+  body #restaurants .restaurants__phrasetlogo2card4, body #restaurants .restaurants__phrasetlogo1, body #restaurants .restaurants__phrasetlogo2card2, body #restaurants .restaurants__phrasetlogo2card3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  body .restaurants__phrase1card3, body .restaurants__phrase1card4 {
+    margin-top: 12px;
   }
 }
 @-webkit-keyframes rotate-center {
@@ -978,6 +1026,4 @@ template {
  */
 [hidden] {
   display: none;
-}
-
-/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=acceuil.css.map */
+}/*# sourceMappingURL=acceuil.css.map */
