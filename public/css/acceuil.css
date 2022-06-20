@@ -1,8 +1,36 @@
+@font-face {
+  font-family: "robotoregular";
+  src: url("Roboto-Regular-webfont.eot");
+  src: url("Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular-webfont.woff2") format("woff2"), url("Roboto-Regular-webfont.woff") format("woff"), url("Roboto-Regular-webfont.ttf") format("truetype"), url("Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotobold";
+  src: url("Roboto-Bold-webfont.eot");
+  src: url("Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("Roboto-Bold-webfont.woff2") format("woff2"), url("Roboto-Bold-webfont.woff") format("woff"), url("Roboto-Bold-webfont.ttf") format("truetype"), url("Roboto-Bold-webfont.svg#robotobold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Shrikhand-Regular";
+  src: url("Shrikhand-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   width: 100%;
 }
 body main {
   margin: auto;
+}
+body h1, body p, body h2, body ul {
+  font-family: "robotoregular";
+}
+body a {
+  color: black;
+  text-decoration: none;
+  font-family: "robotobold";
 }
 body .loader {
   height: 100%;
@@ -27,7 +55,7 @@ body .loader .loader__border {
   border-bottom: 10px solid #9356DC;
   border-left: 10px solid #FF79DA;
   border-right: 10px solid #FF79DA;
-  border-top: 10px solid #99e2d0;
+  border-top: 10px solid #99E2D0;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -46,15 +74,7 @@ body .loader .loader__center {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #99e2d0;
-}
-body a {
-  color: black;
-  text-decoration: none;
-  font-family: "robotobold";
-}
-body h1, body p, body h2, body ul {
-  font-family: "robotoregular";
+  background-color: #99E2D0;
 }
 body header {
   width: 100%;
@@ -361,7 +381,7 @@ body .restaurants__card2 .resaurant__nouveau2 {
   justify-content: center;
   font-size: 20px;
   border-radius: 5px;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   color: #269e80;
   font-family: "robotobold";
 }
@@ -420,7 +440,7 @@ body .restaurants__card3 .resaurant__nouveau3 {
   justify-content: center;
   font-size: 20px;
   border-radius: 5px;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   color: #269e80;
   font-family: "robotobold";
 }
@@ -479,7 +499,7 @@ body .restaurants__card4 .resaurant__nouveau4 {
   justify-content: center;
   font-size: 20px;
   border-radius: 5px;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   color: #269e80;
   font-family: "robotobold";
 }
@@ -546,6 +566,39 @@ body footer .fa-handshake-angle {
 }
 body footer li {
   padding-bottom: 7px;
+}
+@media only screen and (min-width: 426px) {
+  body .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .fonctionnement .fonctionnement__3lignes {
+    display: flex;
+    justify-content: space-around;
+    height: 270px;
+  }
+  body .fonctionnement .fonctionnement__choisir, body .fonctionnement .fonctionnement__composer, body .fonctionnement .fonctionnement__deguster {
+    margin-bottom: 0px;
+    width: 300px;
+  }
+}
+@media only all and (min-width: 769px) and (max-width: 2560px) {
+  body .Restaurantphotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  body .Restaurantphotos .restaurants__card1, body .Restaurantphotos .restaurants__card2, body .Restaurantphotos .restaurants__card3, body .Restaurantphotos .restaurants__card4 {
+    width: 367px;
+  }
+  body .Restaurantphotos .restaurants__phrase1card2 {
+    margin-top: 12px;
+  }
+  body .restaurants__titre {
+    display: flex;
+    justify-content: center;
+  }
 }
 @-webkit-keyframes rotate-center {
   0% {
