@@ -1,9 +1,19 @@
+// Mes variables //
 @import "./utils/variables";
+
+//Mes polices d'écriture //
 @import "./fontface/fontface";
+
+// Mes keyframes //
+@import "./keyframes/keyframes";
+  
+
+
 body{
     width: 100%;
     main{
         margin: auto;
+        
     }
     h1, p, h2, ul{
       font-family: 'robotoregular';
@@ -249,7 +259,32 @@ body{
       padding-bottom: 40px;
       padding-right: 20px;
 
-     
+     .checkbox-like {
+	font-size: 30px;
+  padding-right: 20px;
+  padding-top: 30px;
+	cursor: pointer;
+}
+
+.checkbox-like.checkbox-like--position {
+	position: initial;
+	margin-top: 20px;
+}
+
+.checkbox-like input[type="checkbox"]:checked ~ .unchecked {
+  	display: none; 
+}
+
+.checkbox-like input[type="checkbox"]:checked ~ .checked {
+  	display: inline-block;
+  	color: rgba(255, 255, 255, 0);
+}
+
+.checkbox-like input[type="checkbox"], .checkbox-like .checked {
+  	display: none;
+  	animation: like 1s;
+  	animation-fill-mode: forwards;
+}
         .restaurants__titre{
           font-family: 'robotobold';
           font-size: 28px;
@@ -316,39 +351,6 @@ body{
                   align-items: center;
                   margin-right: 20px;
                   width: 30px;
-                          }
-                          .coeurrempli{
-                            position: absolute;
-                            fill: url(#text-fill);
-                            stroke:none;
-                          }
-                          
-                          .coeur{
-                            width: 30px;
-                            stroke-width: 30;
-                            cursor: pointer;
-                            fill: white;
-                            stroke: black;
-                          }
-                          .coeurvide{
-                            width: 50px;
-                            position: relative;
-                            opacity: 0;
-                            
-                          }
-                          .coeurvide:hover{
-                            opacity: 1;
-                            transition: 0.7s;
-                            fill: url(#text-fill);
-                            stroke: none;
-                            stroke: url(#text-fill);
-                          }
-                          .coeurvide:active{
-                            opacity: 1;
-                            transition: 0.7s;
-                            fill: url(#text-fill);
-                            stroke: none;
-                            stroke: url(#text-fill);
                           }
       }
 
@@ -622,9 +624,9 @@ body{
    .Restaurantphotos{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
         .restaurants__card1, .restaurants__card2, .restaurants__card3, .restaurants__card4{
-          width: 367px;
+          width: 49%;
         }
             .restaurants__phrase1card2{
               margin-top: 12px;
@@ -634,25 +636,33 @@ body{
           display: flex;
           justify-content: center;
         }
- 
+        .fonctionnement{
+          .fonctionnement__3lignes{
+            width: 50%;
+            align-items: center;
+          }
+        }
   }
   
-  @media only all and (min-width: 1138px) and (max-width: 2560px){
+  @media only all and (min-width: 1138px){
 
+    main{
+      width: 100%;
+      max-width: 2560px;
+    }
+    
     .Restaurantphotos{
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      flex-direction: column;
-      align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
       .restaurants__card1, .restaurants__card2, .restaurants__card3, .restaurants__card4{
-        width: 1000px;
+        width: 49%;
         height: 500px;
       }
-      
-      
     }
+
     #restaurants{
+      
       .restaurants__photo1{
         height: 411px;
       }
@@ -674,48 +684,8 @@ body{
   .restaurants__phrase1card3, .restaurants__phrase1card4{
     margin-top: 12px;
   }
-  
 }
-
-
-      @-webkit-keyframes rotate-center {
-        0% {
-          -webkit-transform: rotate(0);
-                  transform: rotate(0);
-                  visibility: visible;
-        }
-        100% {
-          -webkit-transform: rotate(360deg);
-                  transform: rotate(360deg);
-                  visibility: hidden;
-        }
-      }
-      @keyframes rotate-center {
-        0% {
-          -webkit-transform: rotate(0);
-                  transform: rotate(0);
-                  visibility: visible;
-        }
-        100% {
-          -webkit-transform: rotate(360deg);
-                  transform: rotate(360deg);
-                  visibility: hidden;
-        }
-      }
-    @keyframes spinner {
-        0% {
-          opacity: 0.9;
-                  visibility: visible;
-        }
-        70%{
-          opacity: 0.9;
-        }
-        100% {
-          opacity: 0;
-                  visibility: hidden;
-        }
-      }
-    }
+}
     
 
 

@@ -1,5 +1,11 @@
+// Mes variables //
 @import "./utils/variables";
+
+//Mes polices d'écriture //
 @import "./fontface/fontface";
+
+// Mes keyframes //
+@import "./keyframes/keyframes";
 
 
 body{
@@ -80,51 +86,9 @@ body{
                 display: flex;
                 align-items: baseline;
                 justify-content: space-between;
-                .restaurants__icone1{
-                    display: flex;
-                    -webkit-box-pack: center;
-                    justify-content: center;
-                    -webkit-box-align: center;
-                    align-items: center;
-                    margin-right: 20px;
-                    width: 30px;
                 }
             }
-            
-                            .coeurrempli{
-                                position: absolute;
-                                fill: url(#text-fill);
-                                stroke:none;
-                            }
-                            .coeurvide{
-                                width: 50px;
-                                position: relative;
-                                opacity: 0;
-                                
-                              }
-                              .coeurvide:hover{
-                                opacity: 1;
-                                transition: 0.7s;
-                                fill: url(#text-fill);
-                                stroke: none;
-                                stroke: url(#text-fill);
-                              }
-                              .coeurvide:active{
-                                opacity: 1;
-                                transition: 0.7s;
-                                fill: url(#text-fill);
-                                stroke: none;
-                                stroke: url(#text-fill);
-                              }
-                              .coeur{
-                                width: 30px;
-                                stroke-width: 30;
-                                cursor: pointer;
-                                fill: white;
-                                stroke: black;
-                              }
-  
-                            }
+
   .entrees{
     border-radius: 25px;
     padding-left: 15px;
@@ -542,30 +506,53 @@ body{
         padding-bottom: 7px;
       }
     }
-@keyframes opacity{
-    0%{
-      opacity: 0;
-    }
-    100%{
-      opacity: 1;
-    }
+
+.checkbox-like {
+	font-size: 30px;
+  padding-right: 20px;
+  padding-top: 30px;
+	cursor: pointer;
+}
+
+.checkbox-like.checkbox-like--position {
+	position: initial;
+	margin-top: 20px;
+}
+
+.checkbox-like input[type="checkbox"]:checked ~ .unchecked {
+  	display: none; 
+}
+
+.checkbox-like input[type="checkbox"]:checked ~ .checked {
+  	display: inline-block;
+  	color: rgba(255, 255, 255, 0);
+}
+
+.checkbox-like input[type="checkbox"], .checkbox-like .checked {
+  	display: none;
+  	animation: like 1s;
+  	animation-fill-mode: forwards;
+}
+
+@media only screen and (min-width: 769px) {
+  #page{
+    max-width: 2560px;
+    width: 100%;
+    height: 100%;
   }
-  @keyframes slide-left {
-    0%{
-      transform: scaleX(0);
-      }
-      100%{
-        transform: scaleX(50px);
-      }
-  }
-  @keyframes rotate {
-    0%{
-      transform: rotate(0);
+  .menu__sanstitre{
+    display: flex;
+    justify-content: space-between;
+    .entrees, .plats, .desserts {
+      width: 30%;
+    } 
+    .entrees, .plats{
+      padding-right: 0px;
     }
-    100%{
-      transform: rotate(360deg);
-    }
-  }
+}
+}
+
+
   /* Sections
              ========================================================================== */
           

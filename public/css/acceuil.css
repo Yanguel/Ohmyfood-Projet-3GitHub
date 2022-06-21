@@ -18,6 +18,126 @@
   font-weight: normal;
   font-style: normal;
 }
+@-webkit-keyframes like {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    background: linear-gradient(to bottom, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+  }
+  100% {
+    background: linear-gradient(to bottom, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+  }
+}
+@keyframes like {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    background: linear-gradient(to bottom, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+  }
+  100% {
+    background: linear-gradient(to bottom, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+  }
+}
+@-webkit-keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+    visibility: visible;
+  }
+  100% {
+    transform: rotate(360deg);
+    visibility: hidden;
+  }
+}
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+    visibility: visible;
+  }
+  100% {
+    transform: rotate(360deg);
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes spinner {
+  0% {
+    opacity: 0.9;
+    visibility: visible;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes spinner {
+  0% {
+    opacity: 0.9;
+    visibility: visible;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-left {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(50px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(50px);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 body {
   width: 100%;
 }
@@ -251,6 +371,30 @@ body #restaurants {
   padding-bottom: 40px;
   padding-right: 20px;
 }
+body #restaurants .checkbox-like {
+  font-size: 30px;
+  padding-right: 20px;
+  padding-top: 30px;
+  cursor: pointer;
+}
+body #restaurants .checkbox-like.checkbox-like--position {
+  position: initial;
+  margin-top: 20px;
+}
+body #restaurants .checkbox-like input[type=checkbox]:checked ~ .unchecked {
+  display: none;
+}
+body #restaurants .checkbox-like input[type=checkbox]:checked ~ .checked {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0);
+}
+body #restaurants .checkbox-like input[type=checkbox], body #restaurants .checkbox-like .checked {
+  display: none;
+  -webkit-animation: like 1s;
+          animation: like 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
 body #restaurants .restaurants__titre {
   font-family: "robotobold";
   font-size: 28px;
@@ -316,37 +460,6 @@ body #restaurants .restaurants__icone1 {
   align-items: center;
   margin-right: 20px;
   width: 30px;
-}
-body #restaurants .coeurrempli {
-  position: absolute;
-  fill: url(#text-fill);
-  stroke: none;
-}
-body #restaurants .coeur {
-  width: 30px;
-  stroke-width: 30;
-  cursor: pointer;
-  fill: white;
-  stroke: black;
-}
-body #restaurants .coeurvide {
-  width: 50px;
-  position: relative;
-  opacity: 0;
-}
-body #restaurants .coeurvide:hover {
-  opacity: 1;
-  transition: 0.7s;
-  fill: url(#text-fill);
-  stroke: none;
-  stroke: url(#text-fill);
-}
-body #restaurants .coeurvide:active {
-  opacity: 1;
-  transition: 0.7s;
-  fill: url(#text-fill);
-  stroke: none;
-  stroke: url(#text-fill);
 }
 body .restaurants__card2 {
   background-color: white;
@@ -602,10 +715,10 @@ body footer li {
   body .Restaurantphotos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   body .Restaurantphotos .restaurants__card1, body .Restaurantphotos .restaurants__card2, body .Restaurantphotos .restaurants__card3, body .Restaurantphotos .restaurants__card4 {
-    width: 367px;
+    width: 49%;
   }
   body .Restaurantphotos .restaurants__phrase1card2 {
     margin-top: 12px;
@@ -614,17 +727,23 @@ body footer li {
     display: flex;
     justify-content: center;
   }
+  body .fonctionnement .fonctionnement__3lignes {
+    width: 50%;
+    align-items: center;
+  }
 }
-@media only all and (min-width: 1138px) and (max-width: 2560px) {
+@media only all and (min-width: 1138px) {
+  body main {
+    width: 100%;
+    max-width: 2560px;
+  }
   body .Restaurantphotos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-evenly;
   }
   body .Restaurantphotos .restaurants__card1, body .Restaurantphotos .restaurants__card2, body .Restaurantphotos .restaurants__card3, body .Restaurantphotos .restaurants__card4 {
-    width: 1000px;
+    width: 49%;
     height: 500px;
   }
   body #restaurants .restaurants__photo1 {
@@ -646,52 +765,6 @@ body footer li {
   }
   body .restaurants__phrase1card3, body .restaurants__phrase1card4 {
     margin-top: 12px;
-  }
-}
-@-webkit-keyframes rotate-center {
-  0% {
-    transform: rotate(0);
-    visibility: visible;
-  }
-  100% {
-    transform: rotate(360deg);
-    visibility: hidden;
-  }
-}
-@keyframes rotate-center {
-  0% {
-    transform: rotate(0);
-    visibility: visible;
-  }
-  100% {
-    transform: rotate(360deg);
-    visibility: hidden;
-  }
-}
-@-webkit-keyframes spinner {
-  0% {
-    opacity: 0.9;
-    visibility: visible;
-  }
-  70% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-@keyframes spinner {
-  0% {
-    opacity: 0.9;
-    visibility: visible;
-  }
-  70% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
   }
 }
 

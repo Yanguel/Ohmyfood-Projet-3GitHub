@@ -34,46 +34,32 @@
   <section id="menu">
       <div class="menu__titre">
           <h2>La note enchantée</h2>
-          <div class="restaurants__icone1"><svg class="coeur coeurrempli" viewBox="-20 0 550 550" xml:space="preserve">
-            <path d="M 376 30 c -27.783 0 -53.255 8.804 -75.707 26.168 c -21.525 16.647 -35.856 37.85 -44.293 53.268 c -8.437 -15.419 -22.768 -36.621 -44.293 -53.268 C 189.255 38.804 163.783 30 136 30 C 58.468 30 0 93.417 0 177.514 c 0 90.854 72.943 153.015 183.369 247.118 c 18.752 15.981 40.007 34.095 62.099 53.414 C 248.38 480.596 252.12 482 256 482 s 7.62 -1.404 10.532 -3.953 c 22.094 -19.322 43.348 -37.435 62.111 -53.425 C 439.057 330.529 512 268.368 512 177.514 C 512 93.417 453.532 30 376 30z"></path>
-          <defs>
-            <linearGradient id="#text-fill">
-              <stop offset="0%" stop-color="#9356DC"></stop>
-              <stop offset="100%" stop-color="#FF79DA"></stop>
-            </linearGradient>
-          </defs>
-          </svg>
-  
-          <svg class="coeur coeurvide" viewBox="-20 0 550 550" xml:space="preserve">
-            <path d="M 376 30 c -27.783 0 -53.255 8.804 -75.707 26.168 c -21.525 16.647 -35.856 37.85 -44.293 53.268 c -8.437 -15.419 -22.768 -36.621 -44.293 -53.268 C 189.255 38.804 163.783 30 136 30 C 58.468 30 0 93.417 0 177.514 c 0 90.854 72.943 153.015 183.369 247.118 c 18.752 15.981 40.007 34.095 62.099 53.414 C 248.38 480.596 252.12 482 256 482 s 7.62 -1.404 10.532 -3.953 c 22.094 -19.322 43.348 -37.435 62.111 -53.425 C 439.057 330.529 512 268.368 512 177.514 C 512 93.417 453.532 30 376 30 Z"></path>
-            <defs>
-              <linearGradient id="text-fill">
-                <stop offset="0%" stop-color="#9356DC" />
-                <stop offset="100%" stop-color="#FF79DA" />
-          </linearGradient>
-            </defs>
-          </svg>
-          </div>
+          <label class="checkbox-like">
+            <input type="checkbox">
+            <span class="far fa-heart unchecked" aria-hidden="true"></span>
+
+            <span class="fas fa-heart checked" aria-hidden="true"></span>
+         </label>
       </div>
-
-      <div class="entrees">
-          <h3 class="entrees__titre"><span class="border1">ENTR</span>ÉES</h3>
-          
-          <div class="entrees__texttartare validation hiddencard controlopacity" id="case-1">
-             <div class="textetprix">
-                <div class="textedumenu">
-                  <h4 class="denomination">Ravioles de foie gras </h4>
-                  <p class="description denomination">Accompagnés de leur crème à la truffe </p>
+      <div class="menu__sanstitre">
+        <div class="entrees">
+            <h3 class="entrees__titre"><span class="border1">ENTR</span>ÉES</h3>
+            
+            <div class="entrees__texttartare validation hiddencard controlopacity" id="case-1">
+              <div class="textetprix">
+                  <div class="textedumenu">
+                    <h4 class="denomination">Ravioles de foie gras </h4>
+                    <p class="description denomination">Accompagnés de leur crème à la truffe </p>
+                  </div>
+                  <div class="prixmenu">
+                    <p class="prix">25€</p>
+                  </div>
                 </div>
-                <div class="prixmenu">
-                  <p class="prix">25€</p>
-                </div>
-              </div>
-              <div class="validation__box">
-                <i class="fa-solid fa-circle-check"></i>
+                <div class="validation__box">
+                  <i class="fa-solid fa-circle-check"></i>
 
-              </div>
-          </div>
+                </div>
+            </div>
 
           
               <div class="entree__textvelouté validation hiddencard controlopacity" id="case-2">
@@ -124,6 +110,7 @@
 
               </div>
       </div>
+        </div>
 
       
       <div class="plats">
@@ -180,9 +167,11 @@
 
               </div>
       </div>
+      </div>
 
       <div class="desserts">
-          <h3 class="desserts__titre3"><span class="border3">DESS</span>ERTS</h3>
+          <h3 class="desserts__titre3">
+            <span class="border3">DESS</span>ERTS</h3>
           <div class="desserts__textpetales validation hiddencard controlopacity" id="case-8">
               
               <div class="textetprix">
@@ -222,7 +211,7 @@
                   
                   <div class="textetprix">
                     <div class="textedumenu">
-                    <h4 class="denomination">Tarte au citron meringuée </h4>
+                      <h4 class="denomination">Tarte au citron meringuée </h4>
                       <p class="description denomination">Déstructurée</p>
                     </div>
                     <div class="prixmenu">
@@ -231,10 +220,10 @@
               </div>
               <div class="validation__box">
                 <i class="fa-solid fa-circle-check"></i>
-
               </div>
       </div>
-
+    </div> 
+  </div>
 
       <div id="commander">
           <a href="#">
@@ -248,7 +237,7 @@
 
   </section>
 
-
+  </div>
 
 
   <footer>
@@ -276,6 +265,4 @@
         </li>
       </ul>
     </footer>
-
-  </div>
 </body>

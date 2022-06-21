@@ -19,6 +19,126 @@
   font-weight: normal;
   font-style: normal;
 }
+@-webkit-keyframes like {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    background: linear-gradient(to bottom, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+  }
+  100% {
+    background: linear-gradient(to bottom, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+  }
+}
+@keyframes like {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    background: linear-gradient(to bottom, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+  }
+  100% {
+    background: linear-gradient(to bottom, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+  }
+}
+@-webkit-keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+    visibility: visible;
+  }
+  100% {
+    transform: rotate(360deg);
+    visibility: hidden;
+  }
+}
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+    visibility: visible;
+  }
+  100% {
+    transform: rotate(360deg);
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes spinner {
+  0% {
+    opacity: 0.9;
+    visibility: visible;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes spinner {
+  0% {
+    opacity: 0.9;
+    visibility: visible;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-left {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(50px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(50px);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 body {
   width: auto;
 }
@@ -34,7 +154,6 @@ body h4 {
   font-family: "robotobold";
   font-size: 16px;
   margin: 0;
-  padding-top: 10px;
 }
 
 #page {
@@ -97,44 +216,6 @@ header .logo .logo__image {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-}
-#menu .menu__titre .restaurants__icone1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 20px;
-  width: 30px;
-}
-#menu .coeurrempli {
-  position: absolute;
-  fill: url(#text-fill);
-  stroke: none;
-}
-#menu .coeur {
-  width: 30px;
-  stroke-width: 30;
-  cursor: pointer;
-  fill: white;
-  stroke: black;
-}
-#menu .coeurvide {
-  width: 50px;
-  position: relative;
-  opacity: 0;
-}
-#menu .coeurvide:hover {
-  opacity: 1;
-  transition: 0.7s;
-  fill: url(#text-fill);
-  stroke: none;
-  stroke: url(#text-fill);
-}
-#menu .coeurvide:active {
-  opacity: 1;
-  transition: 0.7s;
-  fill: url(#text-fill);
-  stroke: none;
-  stroke: url(#text-fill);
 }
 
 .entrees {
@@ -265,6 +346,8 @@ header .logo .logo__image {
 .plats {
   border-radius: 25px;
   padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .plats .border2 {
   border-bottom: 4px solid #99E2D0;
@@ -304,10 +387,81 @@ header .logo .logo__image {
   align-items: center;
   width: 100%;
 }
+.plats .textedumenu {
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 10px;
+}
+.plats .textedumenu .description {
+  margin: 0px;
+  font-family: "robotoregular";
+  font-size: 13px;
+}
+.plats .prixmenu {
+  padding-right: 11px;
+}
+.plats .prixmenu .prix {
+  font-family: "robotobold";
+}
+.plats .textetprix {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-box-align: center;
+}
+.plats .validation:hover .prixmenu {
+  padding-right: 70px;
+  transition: 0.5s ease;
+}
+.plats .validation .validation__box {
+  display: none;
+  position: absolute;
+  background: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  right: 0px;
+  padding: 0 13px;
+  height: 100%;
+}
+.plats .validation:hover .validation__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: slide-left 0.5s ease;
+          animation: slide-left 0.5s ease;
+  transform-origin: right;
+}
+.plats .validation .validation__box .fa-circle-check {
+  font-size: 30px;
+  color: white;
+  transform: rotate(180deg);
+  -webkit-animation: rotate 0.5s both;
+          animation: rotate 0.5s both;
+}
+.plats .hiddencard .denomination {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.plats .fa-circle-check {
+  font-weight: 900;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.plats .fa-circle-check::before {
+  content: "\f058";
+}
 
 .desserts {
   border-radius: 25px;
   padding-bottom: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .desserts .border3 {
   border-bottom: 4px solid #99E2D0;
@@ -346,6 +500,75 @@ header .logo .logo__image {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+.desserts .textetprix {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-box-align: center;
+}
+.desserts .textedumenu {
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 10px;
+}
+.desserts .textedumenu .description {
+  margin: 0px;
+  font-family: "robotoregular";
+  font-size: 13px;
+}
+.desserts .prixmenu {
+  padding-right: 11px;
+}
+.desserts .prixmenu .prix {
+  font-family: "robotobold";
+}
+.desserts .validation:hover .prixmenu {
+  padding-right: 70px;
+  transition: 0.5s ease;
+}
+.desserts .validation .validation__box {
+  display: none;
+  position: absolute;
+  background: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  right: 0px;
+  padding: 0 13px;
+  height: 100%;
+}
+.desserts .validation:hover .validation__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: slide-left 0.5s ease;
+          animation: slide-left 0.5s ease;
+  transform-origin: right;
+}
+.desserts .validation .validation__box .fa-circle-check {
+  font-size: 30px;
+  color: white;
+  transform: rotate(180deg);
+  -webkit-animation: rotate 0.5s both;
+          animation: rotate 0.5s both;
+}
+.desserts .hiddencard .denomination {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.desserts .fa-circle-check {
+  font-weight: 900;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.desserts .fa-circle-check::before {
+  content: "\f058";
 }
 
 #commander {
@@ -409,53 +632,51 @@ footer li {
   padding-bottom: 7px;
 }
 
-@-webkit-keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.checkbox-like {
+  font-size: 30px;
+  padding-right: 20px;
+  padding-top: 30px;
+  cursor: pointer;
 }
 
-@keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.checkbox-like.checkbox-like--position {
+  position: initial;
+  margin-top: 20px;
 }
-@-webkit-keyframes slide-left {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(50px);
-  }
+
+.checkbox-like input[type=checkbox]:checked ~ .unchecked {
+  display: none;
 }
-@keyframes slide-left {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(50px);
-  }
+
+.checkbox-like input[type=checkbox]:checked ~ .checked {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0);
 }
-@-webkit-keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+
+.checkbox-like input[type=checkbox], .checkbox-like .checked {
+  display: none;
+  -webkit-animation: like 1s;
+          animation: like 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
+
+@media only screen and (min-width: 769px) {
+  main {
+    max-width: 2560px;
+    width: 100%;
+    height: 100%;
   }
-  100% {
-    transform: rotate(360deg);
+
+  .menu__sanstitre {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu__sanstitre .entrees, .menu__sanstitre .plats, .menu__sanstitre .desserts {
+    width: 30%;
+  }
+  .menu__sanstitre .entrees, .menu__sanstitre .plats {
+    padding-right: 0px;
   }
 }
 /* Sections
