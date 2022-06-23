@@ -9,7 +9,10 @@
 
 
 body{
-    width: auto;
+    width: 100%;
+    main{
+      margin: auto;
+    }
     h3{
         font-family: 'Shrikhand-Regular';  
     }
@@ -26,10 +29,6 @@ body{
     }
   } 
   
-  
-  #page{ 
-    margin: auto;
-  }
   
   a{
     color: black;

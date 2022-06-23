@@ -140,7 +140,10 @@
   }
 }
 body {
-  width: auto;
+  width: 100%;
+}
+body main {
+  margin: auto;
 }
 body h2 {
   padding-top: 25px;
@@ -154,10 +157,6 @@ body h4 {
   font-family: "robotobold";
   font-size: 16px;
   margin: 0;
-}
-
-#page {
-  margin: auto;
 }
 
 a {

@@ -9,7 +9,10 @@
 
 
 body{
-    width: auto;
+    width: 100%;
+    main{
+      margin: auto;
+    }
     h2{ 
         padding-top: 25px;
         padding-left: 15px;
@@ -25,9 +28,7 @@ body{
         padding-top: 10px;
         padding-left: 10px;
     }
-    #page{ 
-        margin: auto;
-      }
+    
     
       a{
         color: black;

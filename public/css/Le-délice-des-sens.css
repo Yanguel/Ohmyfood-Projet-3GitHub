@@ -140,7 +140,10 @@
   }
 }
 body {
-  width: auto;
+  width: 100%;
+}
+body main {
+  margin: auto;
 }
 body h2 {
   padding-top: 25px;
@@ -156,9 +159,6 @@ body h4 {
   margin: 0;
   padding-top: 10px;
   padding-left: 10px;
-}
-body #page {
-  margin: auto;
 }
 body a {
   color: black;
