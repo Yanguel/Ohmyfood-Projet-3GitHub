@@ -112,7 +112,7 @@
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(50px);
+    transform: scaleX(1);
   }
 }
 @keyframes slide-left {
@@ -120,7 +120,7 @@
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(50px);
+    transform: scaleX(1);
   }
 }
 @-webkit-keyframes rotate {
@@ -667,6 +667,12 @@ footer li {
   }
   .menu__sanstitre .entrees, .menu__sanstitre .plats {
     padding-right: 0px;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }
 /* Sections
