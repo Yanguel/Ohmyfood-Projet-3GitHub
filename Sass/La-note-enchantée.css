@@ -291,7 +291,7 @@ header .logo .logo__image {
 }
 .entrees .prixmenu {
   padding-right: 20px;
-  padding-top: 30px;
+  padding-top: 19px;
 }
 .entrees .prix {
   font-family: "robotobold";
@@ -401,6 +401,7 @@ header .logo .logo__image {
 }
 .plats .prixmenu .prix {
   font-family: "robotobold";
+  padding-top: 19px;
 }
 .plats .textetprix {
   display: flex;
@@ -523,6 +524,7 @@ header .logo .logo__image {
 }
 .desserts .prixmenu .prix {
   font-family: "robotobold";
+  padding-top: 19px;
 }
 .desserts .validation:hover .prixmenu {
   padding-right: 70px;
