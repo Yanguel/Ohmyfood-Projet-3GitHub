@@ -1,5 +1,0 @@
-le lien vers votre repository GitHub.
-- https://github.com/Yanguel/Ohmyfood-Projet-3GitHub
-
-le lien vers la page web du site.
-- https://yanguel.github.io/Ohmyfood-Projet-3GitHub/
